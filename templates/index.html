@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Calculator</title>
+    
+</head>
+<body>
+    <div class="calculator">
+        <form method="post">
+            <input type="text" name="expression" value="{{expression}}" disabled>
+            <input type="text" name="result" value="{{result}}" disabled>
+            <div class="buttons">
+                {% for row in [['7', '8', '9', '/'], ['4', '5', '6', '*'], ['1', '2', '3', '-'], ['0', '.', '=', '+']] %}
+                <div class="row">
+                    {% for char in row %}
+                    <button type="submit" name="submit" value="{{char}}">{{char}}</button>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+                <div class="row">
+                    <button type="submit" name="submit" value="Clear" class="Clear">Clear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
