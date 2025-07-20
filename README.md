@@ -49,15 +49,15 @@ We create:
 
 - Allows embedding Python code into HTML
 - Dynamically displays variables like `{{ expression }}` or `{{ result }}`
-- Connects frontend visuals to backend values and logic
+- Connects frontend visuals to backend values and logic   (ok)
 
 ---
 
 ## 📷 Screenshot
 
 ```markdown
-![Web Calculator UI](static/images/screenshot.png)
-## 🧪 Cloning & Running the App
+![Web Calculator UI](images/screenshots.png)
+## 🧪 Cloning & Running the App i
 
 ```bash
 # Clone the repo
